@@ -1,0 +1,26 @@
+{
+  "name": "screen-tracker",
+  "version": "1.0.0",
+  "description": "Automatic screen tracker with AI analysis and daily Slack reports",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "report": "node src/report.js",
+    "dev": "node --watch src/index.js",
+    "tray": "electron src/tray.cjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.5",
+    "electron": "^41.3.0",
+    "node-cron": "^3.0.3",
+    "node-sqlite3-wasm": "^0.8.0",
+    "nodemailer": "^8.0.6",
+    "screenshot-desktop": "^1.12.7",
+    "systray2": "^2.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
